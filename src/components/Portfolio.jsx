@@ -2,24 +2,31 @@ import React from "react";
 import medicLab from "../assets/portfolio/medicLab.png";
 import quiz from "../assets/portfolio/quizApp.png";
 import gammingWeb from "../assets/portfolio/gammingWebsite.png";
+import portfolioWeb from "../assets/portfolio/portfolio.png";
+import travelAgency from "../assets/portfolio/travel_agency.png";
+import BMI from "../assets/portfolio/BMI.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
       src: medicLab,
+      herf: "medic-rbq49xi99-zainah7.vercel.app/",
     },
     {
       id: 2,
-      src: medicLab,
+      src: portfolioWeb,
+      herf: "https://portfolio-6ibb86uqo-zainah7.vercel.app/",
     },
     {
       id: 3,
-      src: quiz,
+      src: travelAgency,
+      herf: "travel-agency-3wi62pqen-zainah7.vercel.app/",
     },
     {
       id: 4,
       src: quiz,
+      herf: "quiz-bzvsdaujo-zainah7.vercel.app/",
     },
     {
       id: 5,
@@ -27,7 +34,8 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      src: gammingWeb,
+      src: BMI,
+      herf: "https://bmi-lk3ztwwd7-zainah7.vercel.app/",
     },
   ];
   return (
