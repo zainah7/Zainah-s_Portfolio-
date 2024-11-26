@@ -11,3 +11,10 @@
     font-family: "Raleway", sans-serif;
   }
 }
+.animate-gradient {
+  background: linear-gradient(90deg, #d95aef, #c175ff, #8257e5, #1e90ff);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 4s ease infinite;
+}

@@ -1,36 +1,42 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+
 const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-screen bg-gradient-to-b from-black via-black to-purple-800"
+      className="w-full h-screen bg-gradient-to-b from-gray-900 via-black to-purple-900 overflow-hidden"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
-        <div className="flex flex-col justify-center h-full">
-          <p className="text-gray-400 text-2xl font-medium"> Hi there! It's</p>
-          <h1 className="font-bold text-4xl  sm:text-7xl text-gray-400">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6 md:flex-row">
+        {/* Left Section */}
+        <div className="flex flex-col justify-center h-full text-center md:text-left">
+          <p className="text-purple-400 text-lg md:text-xl font-semibold py-3">
+            Welcome! I’m
+          </p>
+          <h1 className="text-white font-extrabold text-4xl sm:text-7xl">
             Zainah Saheed
           </h1>
-          <h2 className="text-3xl sm:text-6xl font-bold text-gray-400">
-            I'm a Frontend Developer.
+          <h2 className="text-purple-300 text-2xl sm:text-5xl font-bold mt-2 animate-gradient">
+            A Frontend Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            I'm a frontend developer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I'm focused
-            on building responsive frontend web applications.
+          <p className="text-gray-400 py-6 max-w-md">
+            Passionate about crafting exceptional digital experiences through
+            clean and responsive frontend designs. Let’s build something amazing
+            together!
           </p>
-          <div>
+          <div className="flex justify-center md:justify-start">
+            {" "}
+            {/* Center the button on small screens */}
             <Link
               to="portfolio"
               smooth
               duration={500}
-              className=" group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-purple-200 to-gray-950 cursor-pointer"
+              className="group text-white w-fit px-8 py-3 flex items-center rounded-lg shadow-lg bg-gradient-to-r from-purple-700 to-gray-900 hover:from-gray-900 hover:to-purple-700 hover:shadow-purple-500/50 transition-transform duration-300 hover:scale-105"
             >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+              Explore My Portfolio
+              <span className="group-hover:rotate-90 duration-300 ml-2">
+                <MdOutlineKeyboardArrowRight size={25} />
               </span>
             </Link>
           </div>
